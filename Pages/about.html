@@ -34,21 +34,41 @@ DEFAULT: '8px',
 
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="bg-white shadow-lg sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
-      <div class="flex items-center">
-        <img src="../assests/SmartBite.png" alt="SmartBites" class="h-14">
-        <span class="ml-4 text-3xl font-bold luxury-text-gradient">SmartBites</span>
-      </div>
-      <div class="hidden md:flex space-x-8">
-        <a href="index.html">Home</a>
-        <a href="restaurants.html">Restaurants</a>
-        <a href="about.html" class="text-primary">About Us</a>
-        <a href="contact.html">Contact</a>
-      </div>
+ 
+  <!-- Navigation --> 
+<nav class="bg-white shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
+    
+    <!-- Logo -->
+    <div class="flex items-center">
+      <img src="../assests/SmartBite.png" alt="SmartBites" class="h-14">
+      <span class="ml-4 text-3xl font-bold luxury-text-gradient">SmartBites</span>
     </div>
-  </nav>
+
+    <!-- Desktop Menu -->
+    <div id="nav-links" class="hidden md:flex space-x-8">
+      <a href="index.html" class="text-primary">Home</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hamburger Button (Mobile only) -->
+    <button id="hamburger" class="md:hidden flex flex-col gap-1.5 focus:outline-none">
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+      <span class="w-6 h-0.5 bg-black"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden flex-col bg-white shadow-lg px-6 py-4 space-y-4 md:hidden">
+    <a href="index.html">Home</a>
+    <a href="restaurants.html">Restaurants</a>
+    <a href="about.html" class="text-primary">About Us</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
 
 <!-- About Us -->
 <section id="about" class="py-20 bg-amber-50">
@@ -167,5 +187,16 @@ View All Restaurants
   <footer class="bg-secondary text-white text-center py-6">
     <p>© 2025 SmartBites. All Rights Reserved.</p>
   </footer>
+
+ 
+  <script>
+  const hamburger = document.getElementById("hamburger");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  hamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden"); // show/hide mobile menu
+  });
+</script>
+
 </body>
 </html>

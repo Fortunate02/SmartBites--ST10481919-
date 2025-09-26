@@ -59,3 +59,89 @@ background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
 background-clip: text;
 }
 
+/* ==================================================
+   RESPONSIVE DESIGN BREAKPOINTS
+   ================================================== */
+
+/* 📱 Mobile Devices (max-width: 320px)
+   - Adjusts layout for very small screens
+   - Stacks nav and cards
+   - Reduces heading sizes
+*/
+@media (max-width: 320px) {
+  .hero-bg::before {
+    background-position: top; /* focus hero image */
+  }
+  .hero-content h1, 
+  .hero-content h2 {
+    font-size: 1.25rem; /* smaller text */
+    text-align: center; /* center headings */
+  }
+  nav div {
+    flex-direction: column; /* stack nav items */
+    text-align: center;
+  }
+  .luxury-card {
+    margin: 0 auto;
+    max-width: 90%; /* keep content readable */
+  }
+}
+
+/* 📲 Tablet Devices (max-width: 768px)
+   - Simplifies grid to single column
+   - Adjusts heading size
+   - Nav becomes centered
+*/
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem; /* slightly larger than mobile */
+  }
+  .grid {
+    grid-template-columns: 1fr !important; /* one column layout */
+  }
+  nav div {
+    flex-wrap: wrap; /* allow wrapping */
+    justify-content: center; /* center items */
+  }
+}
+
+/* 💻 Desktop (min-width: 1024px)
+   - Full 3-column grid
+   - Large headings
+   - Proper nav spacing
+*/
+@media (min-width: 1024px) {
+  .hero-content h1 {
+    font-size: 3rem; /* large display text */
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr) !important; /* 3-column layout */
+  }
+  nav div {
+    justify-content: space-between; /* distribute nav items */
+  }
+}
+
+/* ==============================
+   Responsive Navigation
+   ============================== */
+
+/* Mobile (<=768px): show hamburger, hide desktop nav */
+@media (max-width: 768px) {
+  #hamburger {
+    display: flex; /* show hamburger */
+  }
+  #nav-links {
+    display: none; /* hide desktop menu */
+  }
+}
+
+/* Desktop (>=1024px): hide hamburger, show nav */
+@media (min-width: 1024px) {
+  #hamburger {
+    display: none; /* hide hamburger */
+  }
+  #nav-links {
+    display: flex; /* show desktop menu */
+  }
+}
