@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartBites - Restaurants</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#D4AF37',
+secondary: '#1A1A1A'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
+      <div class="flex items-center">
+        <img src="../assests/SmartBite.png" alt="SmartBites" class="h-14">
+        <span class="ml-4 text-3xl font-bold luxury-text-gradient">SmartBites</span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html">Home</a>
+        <a href="restaurants.html" class="text-primary">Restaurants</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+ 
+
+  <!-- Featured Restaurants -->
+<section id="restaurants" class="py-20 bg-secondary">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Premium Restaurant Partners</h2>
+<p class="text-xl text-gray-300">World-renowned brands delivering excellence</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="luxury-card rounded-2xl shadow-2xl overflow-hidden food-card-hover cursor-pointer">
+<img src="https://readdy.ai/api/search-image?query=KFC%20restaurant%20interior%20with%20signature%20red%20and%20white%20branding%2C%20modern%20fast%20food%20design%2C%20fried%20chicken%20display%2C%20professional%20restaurant%20photography%2C%20luxury%20fast%20food%20aesthetic&width=400&height=250&seq=kfc001&orientation=landscape" alt="KFC" class="w-full h-56 object-cover object-top">
+<div class="p-8">
+<div class="flex items-center justify-between mb-3">
+<h3 class="text-2xl font-bold text-secondary">KFC</h3>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+<span class="ml-2 text-lg font-bold text-secondary">4.6</span>
+</div>
+</div>
+<p class="text-gray-600 mb-4 text-lg">World-famous fried chicken with 11 secret herbs and spices</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-500 font-medium">15-25 min</span>
+<span class="text-sm luxury-text-gradient font-bold">Premium delivery</span>
+</div>
+</div>
+</div>
+<div class="luxury-card rounded-2xl shadow-2xl overflow-hidden food-card-hover cursor-pointer">
+<img src="https://readdy.ai/api/search-image?query=McDonalds%20restaurant%20interior%20with%20iconic%20golden%20arches%2C%20modern%20fast%20food%20design%2C%20Big%20Mac%20and%20fries%20display%2C%20professional%20restaurant%20photography%2C%20luxury%20fast%20food%20aesthetic&width=400&height=250&seq=mcdonalds001&orientation=landscape" alt="McDonald's" class="w-full h-56 object-cover object-top">
+<div class="p-8">
+<div class="flex items-center justify-between mb-3">
+<h3 class="text-2xl font-bold text-secondary">McDonald's</h3>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+<span class="ml-2 text-lg font-bold text-secondary">4.4</span>
+</div>
+</div>
+<p class="text-gray-600 mb-4 text-lg">Iconic burgers, fries and shakes loved worldwide</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-500 font-medium">10-20 min</span>
+<span class="text-sm luxury-text-gradient font-bold">Express delivery</span>
+</div>
+</div>
+</div>
+<div class="luxury-card rounded-2xl shadow-2xl overflow-hidden food-card-hover cursor-pointer">
+<img src="https://readdy.ai/api/search-image?query=Steers%20restaurant%20interior%20with%20flame-grilled%20burger%20preparation%2C%20South%20African%20burger%20chain%20branding%2C%20professional%20restaurant%20photography%2C%20luxury%20fast%20food%20aesthetic&width=400&height=250&seq=steers001&orientation=landscape" alt="Steers" class="w-full h-56 object-cover object-top">
+<div class="p-8">
+<div class="flex items-center justify-between mb-3">
+<h3 class="text-2xl font-bold text-secondary">Steers</h3>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+<span class="ml-2 text-lg font-bold text-secondary">4.7</span>
+</div>
+</div>
+<p class="text-gray-600 mb-4 text-lg">Flame-grilled burgers and hand-cut chips perfection</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-500 font-medium">15-25 min</span>
+<span class="text-sm luxury-text-gradient font-bold">Premium delivery</span>
+</div>
+</div>
+</div>
+<div class="luxury-card rounded-2xl shadow-2xl overflow-hidden food-card-hover cursor-pointer">
+<img src="https://readdy.ai/api/search-image?query=Panarottis%20restaurant%20interior%20with%20Italian%20pizza%20oven%2C%20family%20dining%20atmosphere%2C%20authentic%20Italian%20decor%2C%20professional%20restaurant%20photography%2C%20luxury%20casual%20dining%20aesthetic&width=400&height=250&seq=panarottis001&orientation=landscape" alt="Panarottis" class="w-full h-56 object-cover object-top">
+<div class="p-8">
+<div class="flex items-center justify-between mb-3">
+<h3 class="text-2xl font-bold text-secondary">Panarottis</h3>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+<span class="ml-2 text-lg font-bold text-secondary">4.8</span>
+</div>
+</div>
+<p class="text-gray-600 mb-4 text-lg">Authentic Italian pizzas and pasta family favorites</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-500 font-medium">20-30 min</span>
+<span class="text-sm luxury-text-gradient font-bold">Family delivery</span>
+</div>
+</div>
+</div>
+<div class="luxury-card rounded-2xl shadow-2xl overflow-hidden food-card-hover cursor-pointer">
+<img src="https://readdy.ai/api/search-image?query=Spur%20restaurant%20interior%20with%20Western%20themed%20decor%2C%20family%20steakhouse%20atmosphere%2C%20grilled%20steaks%20and%20ribs%2C%20professional%20restaurant%20photography%2C%20luxury%20family%20dining%20aesthetic&width=400&height=250&seq=spur001&orientation=landscape" alt="Spur" class="w-full h-56 object-cover object-top">
+<div class="p-8">
+<div class="flex items-center justify-between mb-3">
+<h3 class="text-2xl font-bold text-secondary">Spur</h3>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+<span class="ml-2 text-lg font-bold text-secondary">4.6</span>
+</div>
+</div>
+<p class="text-gray-600 mb-4 text-lg">Premium steaks, ribs and family dining experience</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-500 font-medium">25-35 min</span>
+<span class="text-sm luxury-text-gradient font-bold">Grill delivery</span>
+</div>
+</div>
+</div>
+<div class="luxury-card rounded-2xl shadow-2xl overflow-hidden food-card-hover cursor-pointer">
+<img src="https://readdy.ai/api/search-image?query=Burger%20King%20restaurant%20interior%20with%20flame-grilled%20Whopper%20preparation%2C%20modern%20fast%20food%20design%2C%20professional%20restaurant%20photography%2C%20luxury%20fast%20food%20aesthetic&width=400&height=250&seq=burgerking001&orientation=landscape" alt="Burger King" class="w-full h-56 object-cover object-top">
+<div class="p-8">
+<div class="flex items-center justify-between mb-3">
+<h3 class="text-2xl font-bold text-secondary">Burger King</h3>
+<div class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center text-primary">
+<i class="ri-star-fill ri-lg"></i>
+</div>
+<span class="ml-2 text-lg font-bold text-secondary">4.5</span>
+</div>
+</div>
+<p class="text-gray-600 mb-4 text-lg">Home of the Whopper and flame-grilled perfection</p>
+<div class="flex items-center justify-between">
+<span class="text-sm text-gray-500 font-medium">12-22 min</span>
+<span class="text-sm luxury-text-gradient font-bold">Fast delivery</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works -->
+<section class="py-16 bg-amber-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">How It Works</h2>
+<p class="text-lg text-gray-600">Simple steps to get your favorite food delivered</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="text-center">
+<div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 floating-animation">
+<div class="w-8 h-8 flex items-center justify-center text-white">
+<i class="ri-search-line ri-2x"></i>
+</div>
+</div>
+<h3 class="text-xl font-bold text-secondary mb-3">Browse & Select</h3>
+<p class="text-gray-600">Explore restaurants and browse through their delicious menus to find your perfect meal</p>
+</div>
+<div class="text-center">
+<div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 floating-animation" style="animation-delay: 0.5s;">
+<div class="w-8 h-8 flex items-center justify-center text-white">
+<i class="ri-shopping-cart-line ri-2x"></i>
+</div>
+</div>
+<h3 class="text-xl font-bold text-secondary mb-3">Order & Pay</h3>
+<p class="text-gray-600">Add items to your cart, customize your order, and securely pay with multiple payment options</p>
+</div>
+<div class="text-center">
+<div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 floating-animation" style="animation-delay: 1s;">
+<div class="w-8 h-8 flex items-center justify-center text-white">
+<i class="ri-truck-line ri-2x"></i>
+</div>
+</div>
+<h3 class="text-xl font-bold text-secondary mb-3">Fast Delivery</h3>
+<p class="text-gray-600">Sit back and relax while our delivery partners bring your fresh food right to your doorstep</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Reviews -->
+<section class="py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">What Our Customers Say</h2>
+<p class="text-lg text-gray-600">Real reviews from satisfied customers</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+<div>
+<h4 class="font-bold text-secondary">Sarah Johnson</h4>
+<div class="flex items-center">
+<div class="flex space-x-1">
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-gray-600">"Amazing service! The food arrived hot and fresh, exactly as ordered. SmartBites has become my go-to for food delivery. Highly recommended!"</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+<div>
+<h4 class="font-bold text-secondary">Michael Chen</h4>
+<div class="flex items-center">
+<div class="flex space-x-1">
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-gray-600">"The variety of restaurants is incredible, and the delivery is always on time. The app is user-friendly and makes ordering a breeze. Love it!"</p>
+</div>
+<div class="bg-white p-8 rounded-xl shadow-lg">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+<div>
+<h4 class="font-bold text-secondary">Emma Rodriguez</h4>
+<div class="flex items-center">
+<div class="flex space-x-1">
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+<div class="w-4 h-4 flex items-center justify-center text-yellow-500">
+<i class="ri-star-fill ri-sm"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="text-gray-600">"Outstanding customer service and quality food. The tracking feature is great, and I always know exactly when my order will arrive. Five stars!"</p>
+</div>
+</div>
+</div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-secondary text-white text-center py-6">
+    <p>© 2025 SmartBites. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+.hero-bg {
+background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 50%, #1A1A1A 100%);
+position: relative;
+}
+.hero-bg::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-image: url('https://readdy.ai/api/search-image?query=Luxury%20premium%20food%20delivery%20hero%20background%20with%20elegant%20golden%20accents%2C%20sophisticated%20dark%20theme%2C%20floating%20gourmet%20ingredients%2C%20premium%20restaurant%20quality%20dishes%2C%20champagne%20bubbles%2C%20gold%20leaf%20details%2C%20high-end%20culinary%20presentation%2C%20dramatic%20lighting%2C%20luxurious%20dining%20atmosphere&width=1920&height=800&seq=luxhero001&orientation=landscape');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+opacity: 0.3;
+}
+.hero-content {
+position: relative;
+z-index: 1;
+}
+.food-card-hover {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.food-card-hover:hover {
+transform: translateY(-8px);
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.floating-animation {
+animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+0%, 100% { transform: translateY(0px); }
+50% { transform: translateY(-10px); }
+}
+.fade-in {
+animation: fadeIn 0.8s ease-in;
+}
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+.luxury-gradient {
+background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #D4AF37 100%);
+}
+.luxury-card {
+background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+border: 1px solid rgba(212, 175, 55, 0.1);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.luxury-text-gradient {
+background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+

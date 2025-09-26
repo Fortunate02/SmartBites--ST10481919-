@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartBites - Home</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#D4AF37',
+secondary: '#1A1A1A'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
+      <div class="flex items-center">
+        <img src="../assests/SmartBite.png" alt="SmartBites" class="h-14">
+        <span class="ml-4 text-3xl font-bold luxury-text-gradient">SmartBites</span>
+      </div>
+      <div class="hidden md:flex space-x-8">
+        <a href="index.html">Home</a>
+        <a href="restaurants.html" class="text-primary">Restaurants</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+  
+<section id="home" class="hero-bg min-h-screen flex items-center">
+<div class="w-full hero-content">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+<div class="text-left space-y-10 fade-in">
+<h1 class="text-5xl md:text-7xl font-bold text-white leading-tight">
+Premium Food<br>
+<span class="luxury-text-gradient">Luxury Delivered</span>
+</h1>
+<p class="text-xl md:text-2xl text-gray-200 max-w-lg leading-relaxed">
+Indulge in the finest culinary experiences from world-class restaurants, delivered with unmatched elegance and precision.
+</p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="luxury-gradient text-white px-10 py-5 !rounded-button text-xl font-bold hover:shadow-2xl transition-all duration-300 whitespace-nowrap floating-animation">
+Order Now
+</button>
+<button class="border-2 border-primary text-primary bg-white px-10 py-5 !rounded-button text-xl font-bold hover:bg-primary hover:text-white transition-all duration-300 whitespace-nowrap">
+Explore Menu
+</button>
+</div>
+<div class="flex items-center space-x-8 pt-4">
+<div class="text-center">
+<div class="text-2xl font-bold text-secondary">500+</div>
+<div class="text-sm text-gray-600">Restaurants</div>
+</div>
+<div class="text-center">
+<div class="text-2xl font-bold text-secondary">50k+</div>
+<div class="text-sm text-gray-600">Happy Customers</div>
+</div>
+<div class="text-center">
+<div class="text-2xl font-bold text-secondary">30min</div>
+<div class="text-sm text-gray-600">Avg Delivery</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Categories -->
+<section class="py-20 bg-gradient-to-br from-gray-50 to-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl md:text-5xl font-bold text-secondary mb-6">Premium Categories</h2>
+<p class="text-xl text-gray-600">Curated selection of the finest culinary experiences</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+<div class="luxury-card p-8 rounded-2xl text-center food-card-hover cursor-pointer">
+<div class="w-20 h-20 mx-auto mb-6 luxury-gradient rounded-full flex items-center justify-center">
+<img src="https://readdy.ai/api/search-image?query=Premium%20artisanal%20pizza%20with%20truffle%20and%20gourmet%20toppings%2C%20luxury%20food%20photography%2C%20elegant%20presentation%2C%20high-end%20Italian%20cuisine%2C%20golden%20lighting%2C%20sophisticated%20culinary%20art&width=80&height=80&seq=luxpizza001&orientation=squarish" alt="Pizza" class="w-12 h-12 object-cover rounded-full">
+</div>
+<h3 class="font-bold text-secondary text-lg">Artisan Pizza</h3>
+</div>
+<div class="luxury-card p-8 rounded-2xl text-center food-card-hover cursor-pointer">
+<div class="w-20 h-20 mx-auto mb-6 luxury-gradient rounded-full flex items-center justify-center">
+<img src="https://readdy.ai/api/search-image?query=Gourmet%20wagyu%20burger%20with%20premium%20ingredients%2C%20luxury%20food%20photography%2C%20elegant%20presentation%2C%20high-end%20burger%20craftsmanship%2C%20golden%20lighting%2C%20sophisticated%20culinary%20art&width=80&height=80&seq=luxburger001&orientation=squarish" alt="Burgers" class="w-12 h-12 object-cover rounded-full">
+</div>
+<h3 class="font-bold text-secondary text-lg">Premium Burgers</h3>
+</div>
+<div class="luxury-card p-8 rounded-2xl text-center food-card-hover cursor-pointer">
+<div class="w-20 h-20 mx-auto mb-6 luxury-gradient rounded-full flex items-center justify-center">
+<img src="https://readdy.ai/api/search-image?query=Omakase%20sushi%20platter%20with%20premium%20fish%2C%20luxury%20Japanese%20cuisine%2C%20elegant%20presentation%2C%20high-end%20sushi%20craftsmanship%2C%20golden%20lighting%2C%20sophisticated%20culinary%20art&width=80&height=80&seq=luxsushi001&orientation=squarish" alt="Sushi" class="w-12 h-12 object-cover rounded-full">
+</div>
+<h3 class="font-bold text-secondary text-lg">Omakase Sushi</h3>
+</div>
+<div class="luxury-card p-8 rounded-2xl text-center food-card-hover cursor-pointer">
+<div class="w-20 h-20 mx-auto mb-6 luxury-gradient rounded-full flex items-center justify-center">
+<img src="https://readdy.ai/api/search-image?query=Gourmet%20salad%20with%20organic%20ingredients%20and%20edible%20flowers%2C%20luxury%20healthy%20cuisine%2C%20elegant%20presentation%2C%20high-end%20culinary%20art%2C%20golden%20lighting%2C%20sophisticated%20food%20styling&width=80&height=80&seq=luxsalad001&orientation=squarish" alt="Salads" class="w-12 h-12 object-cover rounded-full">
+</div>
+<h3 class="font-bold text-secondary text-lg">Gourmet Salads</h3>
+</div>
+<div class="luxury-card p-8 rounded-2xl text-center food-card-hover cursor-pointer">
+<div class="w-20 h-20 mx-auto mb-6 luxury-gradient rounded-full flex items-center justify-center">
+<img src="https://readdy.ai/api/search-image?query=Luxury%20chocolate%20dessert%20with%20gold%20leaf%20and%20berries%2C%20high-end%20pastry%20art%2C%20elegant%20presentation%2C%20sophisticated%20culinary%20craftsmanship%2C%20golden%20lighting%2C%20premium%20confectionery&width=80&height=80&seq=luxdessert001&orientation=squarish" alt="Desserts" class="w-12 h-12 object-cover rounded-full">
+</div>
+<h3 class="font-bold text-secondary text-lg">Fine Desserts</h3>
+</div>
+<div class="luxury-card p-8 rounded-2xl text-center food-card-hover cursor-pointer">
+<div class="w-20 h-20 mx-auto mb-6 luxury-gradient rounded-full flex items-center justify-center">
+<img src="https://readdy.ai/api/search-image?query=Premium%20cocktail%20with%20gold%20rim%20and%20garnish%2C%20luxury%20beverage%20photography%2C%20elegant%20presentation%2C%20high-end%20mixology%2C%20sophisticated%20bar%20craftsmanship%2C%20golden%20lighting&width=80&height=80&seq=luxdrinks001&orientation=squarish" alt="Drinks" class="w-12 h-12 object-cover rounded-full">
+</div>
+<h3 class="font-bold text-secondary text-lg">Craft Beverages</h3>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-secondary text-white py-12">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<div class="flex items-center mb-4">
+<img src="https://static.readdy.ai/image/d183289e8dffe437f47882ee0a7fe43e/33611aeb57c6d9da042a310ba28411b4.png" alt="SmartBites" class="h-14 w-auto">
+<span class="ml-4 text-3xl font-bold text-white">SmartBites</span>
+</div>
+<p class="text-gray-300 mb-4">Delicious food delivered fresh to your doorstep. Experience the best dining from your favorite restaurants.</p>
+<div class="flex space-x-4">
+<div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-80 transition-all duration-200">
+<i class="ri-facebook-fill text-white"></i>
+</div>
+<div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-80 transition-all duration-200">
+<i class="ri-twitter-fill text-white"></i>
+</div>
+<div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-opacity-80 transition-all duration-200">
+<i class="ri-instagram-fill text-white"></i>
+</div>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#home" class="text-gray-300 hover:text-primary transition-colors duration-200">Home</a></li>
+<li><a href="#restaurants" class="text-gray-300 hover:text-primary transition-colors duration-200">Restaurants</a></li>
+<li><a href="#about" class="text-gray-300 hover:text-primary transition-colors duration-200">About Us</a></li>
+<li><a href="#contact" class="text-gray-300 hover:text-primary transition-colors duration-200">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Support</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-200">Help Center</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-200">Privacy Policy</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-200">Terms of Service</a></li>
+<li><a href="#" class="text-gray-300 hover:text-primary transition-colors duration-200">FAQ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+<p class="text-gray-300 mb-4">Subscribe to get updates on new restaurants and special offers</p>
+<div class="flex gap-2">
+<input type="email" placeholder="Enter email" class="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white text-sm focus:ring-2 focus:ring-primary focus:border-transparent">
+<button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-opacity-90 transition-all duration-200 whitespace-nowrap">
+Subscribe
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-8 pt-8 text-center">
+<p class="text-gray-300">&copy; 2024 SmartBites. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+</body>
+</html>
