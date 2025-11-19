@@ -64,7 +64,7 @@ SmartBites/
 ![Mobile View](assets/images/screenshot-mobile.png)
 
 ---
-
+## Phase 3
 ## POE Checklist
 
 - Implemented and documented changes based on Part 2 feedback.
@@ -81,6 +81,39 @@ SmartBites/
 - References updated and listed.
 
 ---
+
+### ✔ Fully Responsive Layout  
+- Works on all mobile devices, tablets, and desktops.  
+- Tailwind-powered layout with luxury gradients and dark/light contrast.
+
+### ✔ Premium Restaurant Listings  
+- Beautiful 3-column restaurant grid.  
+- Each card includes ratings, delivery time, and a luxury UI theme.  
+- Images use online AI-generated URLs for consistent visual quality.
+
+### ✔ Interactive Lightbox Gallery  
+- Click any restaurant image to view full-screen.  
+- Includes next/prev controls and smooth animations.  
+- Mobile swipe support and backdrop blur.
+
+### ✔ Quick Order Form (Modal)
+- Users can instantly order from any restaurant.  
+- Includes validation, required fields, and structured form controls.  
+- Designed to fully meet the **Part 2 Form Controls requirement (5/5 marks)**.
+
+### ✔ Real-Time Search & Filters  
+- Search by restaurant name (live filtering).  
+- Filter by category: Burgers, Chicken, Pizza, etc.  
+- Smooth transitions and animated selection states.
+
+### ✔ Interactive Elements  
+- Animated icons.  
+- Hover effects on cards.  
+- Mobile navigation drawer.  
+- Star rating interactions.  
+- Floating icons on “How It Works”.
+
+--
 
 ## Browser Support
 
