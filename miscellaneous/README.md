@@ -133,9 +133,38 @@ SmartBites/
  
 ---
 
-## References
+
+## References Phase 2
 
 1. [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 2. [Remix Icon Library](https://remixicon.com/)
 3. [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 4. [Google Fonts - Pacifico](https://fonts.google.com/specimen/Pacifico)
+
+---
+
+## References Phase 3
+-Tailwind CSS – A utility-first CSS framework for rapid UI development.
+-Website: https://tailwindcss.com
+
+-3WebSchools
+-https://www.w3schools.com/
+
+-Remix Icon – A set of open-source neutral-style icons used in web projects.
+-Website: https://remixicon.com
+
+-YouTube Embed API – Used to embed videos directly in the website.
+-Documentation: https://developers.google.com/youtube/iframe_api_reference
+
+-HTML5 & CSS3 Documentation – Standard web technologies used for structure and styling.
+-Reference: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+-Reference: https://developer.mozilla.org/en-US/docs/Web/CSS
+
+-JavaScript (ES6+) – Used for interactivity such as mobile menu toggle.
+-Documentation: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+-Images from Readdy – Stock images generated.
+-Website: https://readdy.ai
+
+-Stack Overflow
+-https://stackoverflow.blog/2019/09/12/practical-ways-to-write-better-javascript/

@@ -55,6 +55,7 @@ Maintained according to [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - Includes required fields: name, email, phone, restaurant, food item, quantity.  
 - Added form validation and success message state.  
 - Improved accessibility: labels, aria attributes, keyboard navigation support.
+- Added Social medias on the about us page
 
 ## **2. Interactive Elements Added / Improved**
 - Added **Restaurant Search Bar** (real-time filtering).  
