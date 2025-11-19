@@ -1,147 +1,168 @@
-
+/* Icon base styling for Remix icons */
 :where([class^="ri-"])::before {
-content: "\f3c2";
+  content: "\f3c2";
 }
+
+/* Main hero background (dark theme with image overlay) */
 .hero-bg {
-background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 50%, #1A1A1A 100%);
-position: relative;
+  background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 50%, #1A1A1A 100%);
+  position: relative;
+  overflow: hidden;
 }
+
+/* Background image overlay for hero section */
 .hero-bg::before {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-image: url('https://readdy.ai/api/search-image?query=Luxury%20premium%20food%20delivery%20hero%20background%20with%20elegant%20golden%20accents%2C%20sophisticated%20dark%20theme%2C%20floating%20gourmet%20ingredients%2C%20premium%20restaurant%20quality%20dishes%2C%20champagne%20bubbles%2C%20gold%20leaf%20details%2C%20high-end%20culinary%20presentation%2C%20dramatic%20lighting%2C%20luxurious%20dining%20atmosphere&width=1920&height=800&seq=luxhero001&orientation=landscape');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-opacity: 0.3;
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://readdy.ai/api/search-image?query=Luxury%20premium%20food%20delivery%20hero%20background%20with%20elegant%20golden%20accents%2C%20sophisticated%20dark%20theme%2C%20floating%20gourmet%20ingredients%2C%20premium%20restaurant%20quality%20dishes%2C%20champagne%20bubbles%2C%20gold%20leaf%20details%2C%20high-end%20culinary%20presentation%2C%20dramatic%20lighting%2C%20luxurious%20dining%20atmosphere&width=1920&height=800&seq=luxhero001&orientation=landscape');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.28;
+  z-index: 0;
 }
+
+/* Makes sure hero text sits above the image overlay */
 .hero-content {
-position: relative;
-z-index: 1;
+  position: relative;
+  z-index: 2;
 }
+
+/* Hover effect for food cards */
 .food-card-hover {
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .food-card-hover:hover {
-transform: translateY(-8px);
-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
 }
+
+/* Floating animation used on decorative elements */
 .floating-animation {
-animation: float 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
 }
+
 @keyframes float {
-0%, 100% { transform: translateY(0px); }
-50% { transform: translateY(-10px); }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
+
+/* Simple fade-in animation for smooth content loading */
 .fade-in {
-animation: fadeIn 0.8s ease-in;
+  animation: fadeIn 0.8s ease-in both;
 }
+
 @keyframes fadeIn {
-from { opacity: 0; transform: translateY(20px); }
-to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
+
+/* Gradient background used on premium sections */
 .luxury-gradient {
-background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #D4AF37 100%);
+  background: linear-gradient(135deg, #D4AF37, #FFD700, #D4AF37);
 }
+
+/* Card styling for premium look */
 .luxury-card {
-background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
-border: 1px solid rgba(212, 175, 55, 0.1);
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
 }
+
+/* Gradient gold text */
 .luxury-text-gradient {
-background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
+  background: linear-gradient(135deg, #D4AF37, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ==================================================
-   RESPONSIVE DESIGN BREAKPOINTS
+   RESPONSIVE BREAKPOINTS
    ================================================== */
 
-/* 📱 Mobile Devices (max-width: 320px)
-   - Adjusts layout for very small screens
-   - Stacks nav and cards
-   - Reduces heading sizes
-*/
+/* Very small mobile screens (320px and below) */
 @media (max-width: 320px) {
+
   .hero-bg::before {
-    background-position: top; /* focus hero image */
+    background-position: top;
   }
-  .hero-content h1, 
+
+  .hero-content h1,
   .hero-content h2 {
-    font-size: 1.25rem; /* smaller text */
-    text-align: center; /* center headings */
-  }
-  nav div {
-    flex-direction: column; /* stack nav items */
+    font-size: 1.2rem;
     text-align: center;
   }
+
+  nav div {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .luxury-card {
     margin: 0 auto;
-    max-width: 90%; /* keep content readable */
+    max-width: 90%;
   }
 }
 
-/* 📲 Tablet Devices (max-width: 768px)
-   - Simplifies grid to single column
-   - Adjusts heading size
-   - Nav becomes centered
-*/
+/* Mobile/tablet screens (up to 768px) */
 @media (max-width: 768px) {
+
+  /* Slightly bigger text for tablet sizes */
   .hero-content h1 {
-    font-size: 2rem; /* slightly larger than mobile */
+    font-size: 2rem;
   }
+
+  /* Switch grid to single column */
   .grid {
-    grid-template-columns: 1fr !important; /* one column layout */
+    grid-template-columns: 1fr !important;
   }
+
   nav div {
-    flex-wrap: wrap; /* allow wrapping */
-    justify-content: center; /* center items */
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
-/* 💻 Desktop (min-width: 1024px)
-   - Full 3-column grid
-   - Large headings
-   - Proper nav spacing
-*/
+/* Desktop screens (1024px and above) */
 @media (min-width: 1024px) {
+
+  /* Larger hero text for desktop view */
   .hero-content h1 {
-    font-size: 3rem; /* large display text */
+    font-size: 3rem;
   }
+
+  /* 3-column layout on desktop */
   .grid {
-    grid-template-columns: repeat(3, 1fr) !important; /* 3-column layout */
+    grid-template-columns: repeat(3, 1fr) !important;
   }
+
   nav div {
-    justify-content: space-between; /* distribute nav items */
+    justify-content: space-between;
   }
 }
 
-/* ==============================
-   Responsive Navigation
-   ============================== */
+/* ==================================================
+   NAVIGATION RESPONSIVENESS
+   ================================================== */
 
-/* Mobile (<=768px): show hamburger, hide desktop nav */
+/* Mobile nav — hide links and show hamburger menu */
 @media (max-width: 768px) {
   #hamburger {
-    display: flex; /* show hamburger */
+    display: flex;
   }
   #nav-links {
-    display: none; /* hide desktop menu */
+    display: none;
   }
 }
 
-/* Desktop (>=1024px): hide hamburger, show nav */
+/* Desktop nav — hide hamburger, show links */
 @media (min-width: 1024px) {
   #hamburger {
-    display: none; /* hide hamburger */
+    display: none;
   }
   #nav-links {
-    display: flex; /* show desktop menu */
+    display: flex;
   }
 }
