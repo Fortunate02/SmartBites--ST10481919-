@@ -29,12 +29,19 @@ Maintained according to [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 - Restaurants page with card layout and hover effects.
 - CSS for typography, layout, gradients, shadows, and responsive design.
 
-### Improved
+### Improvements from Phase 2 (2025-11-12)
 - Optimized hero section layout and images.
+- Added Commments on the pages.
+- Index had errros, its fixed and recorgnizable.
+- Added and modified the Readme file together with the ChangeLog file.
+- Images are now visible and Logos.
+- CSS styling added comments and readable.
+- Restructured and re-arranged to proper file and folder structure.
+- Added references from part 2 then part 3
 - Improved grid and flexbox structures for consistent spacing.
 
 ## [1.0.0] – 2025-08-27
-### Added
+### Added Structure
 - Homepage (index.html) with hero section and featured content.
 - About Us page with company overview and video.
 - Contact page with form layout.
